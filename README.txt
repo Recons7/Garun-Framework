@@ -34,9 +34,9 @@
 
 ========= Installation :- =============
 
-"First copy the url for Garun-Framework's Repository"
+"git clone https://github.com/Recons7/Garun-Framework.git"
 
-"And then clone it to your linux machines, windows or termux. With git clone command."
+"👆👆👆 Clone it. And then Change directory :- cd Garun-Framework"
 
 "Then Install requirements For This Framework. To install requirements Type: pip install -r requirements.txt "
 
