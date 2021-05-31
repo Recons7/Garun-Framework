@@ -22,7 +22,7 @@
 
 ">>> We Will always Try to make it more Good And Usefull."
 
-#==========================================#
+#=======================================#
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
@@ -30,7 +30,7 @@
 # Responsible For Any illegal Activities 
 # Done By you.... Be legall and Use it !"
 #
-#=========={Garun-Framework}===============#
+#=========={Garun-Framework}============#
 
 ========= Installation :- =============
 
