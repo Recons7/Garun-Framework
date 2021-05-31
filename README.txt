@@ -22,15 +22,15 @@
 
 ">>> We Will always Try to make it more Good And Usefull."
 
-#===================================================================#
+#==========================================#
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
-# Uses. Any illegal Use of this tool Will Not be Tolerated. 
+# Uses. Any illegal Use of this tool Will # Not be Tolerated. 
 # Responsible For Any illegal Activities 
 # Done By you.... Be legall and Use it !"
 #
-#====================={Garun-Framework}=============================#
+#=========={Garun-Framework}===============#
 
 ========= Installation :- =============
 
