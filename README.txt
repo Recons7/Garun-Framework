@@ -26,7 +26,7 @@
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
-# Uses. Any illegal Use of this tool Will 
+# Uses. Any illegal Use of this toolWill 
 # Not be Tolerated. 
 # Responsible For Any illegal Activities 
 # Done By you.... Be legall and Use it !"
