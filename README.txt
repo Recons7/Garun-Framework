@@ -1,12 +1,12 @@
 "Welcome To Garun-Framework"
 
-# ========[Garun-Framework]=======#
+# ========[Garun-Framework]==========#
 
 # Creator : Anonymous
 # email-me: goncertking@gmail.com
 # github : https://github.com/Recons7
 
-# ========[Garun-Framework]=======#
+# ========[Garun-Framework]==========#
 
 "This Framework Consist of Some Usefull Hacking Scripts. It contains following scripts :- "
 
@@ -22,15 +22,15 @@
 
 ">>> We Will always Try to make it more Good And Usefull."
 
-#===============================#
+#===================================================================#
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
-# Uses. Any illegal Use of this tool Will be # Not Tolerated. And We will not be 
+# Uses. Any illegal Use of this tool Will Not be Tolerated. 
 # Responsible For Any illegal Activities 
 # Done By you.... Be legall and Use it !"
 #
-#========{Garun-Framework}=======#
+#====================={Garun-Framework}=============================#
 
 ========= Installation :- =============
 
