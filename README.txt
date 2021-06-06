@@ -29,7 +29,7 @@
 # "This Tool is Only Developed For legall 
 # Uses. Any illegal Use of this tool Will 
 # Not be Tolerated. 
-# Done By you.... Be legall and Use it !"
+# Be legall and Use it !"
 #
 #======={Garun-Framework}=========#
 
