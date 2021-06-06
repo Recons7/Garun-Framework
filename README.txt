@@ -27,9 +27,8 @@
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
-# Uses. Any illegal Use of this toolWill 
+# Uses. Any illegal Use of this tool Will 
 # Not be Tolerated. 
-# Responsible For Any illegal Activities 
 # Done By you.... Be legall and Use it !"
 #
 #======={Garun-Framework}=========#
