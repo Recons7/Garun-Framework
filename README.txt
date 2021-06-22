@@ -19,6 +19,8 @@
 
 "A payload for windows, linux.."
 
+"A phone number Osint Tool"
+
 "And more...."
 
 ">>> We Will always Try to make it more Good And Usefull."
@@ -47,6 +49,8 @@
 
 "Commands are listed On the Tool itself But I am including Commands For the Tool here too :- 
 
+Command > type: [help] To see for Usable Commands.
+
 Command > type: [restart] To restart garun-Framework.
 
 Command > type: [./site.gframe] To access, Is Site Down. Script 
@@ -54,6 +58,8 @@ Command > type: [./site.gframe] To access, Is Site Down. Script
 Command > type: [./g-scrap] To acess Site Scrapper. 
 
 Command > type: [g.handle-paywork] To handle a payload session if sent payload to victim.
+
+Command > type: [scrapnum] To Osint a phone number.
 
 Command > type: [clr] To clear the Screen.
 
