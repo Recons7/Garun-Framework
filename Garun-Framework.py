@@ -6,6 +6,10 @@ import pyfiglet
 import smtplib
 import time
 import os
+
+import phonenumbers
+from phonenumbers import geocoder, carrier, timezone
+
 os.system('clear')
 # ========[Garun-Framework]=======#
 
@@ -31,23 +35,35 @@ print(colored('''
               ''``
      ''',"red"))
 print(colored("\t\t     D3V3LOPED BY ANON","green"))
+time.sleep(0.1)
+print(colored("\n\n\t>> Type help to See for available options <<", "yellow"))
 info_text_for_usage = colored("""\n\nWelcome To Garun-Framework. To use this tool commands are listed Here : 
 
-Command > type: [restart] To restart garun-Framework.
-Command > type: [./site.gframe] To access, Is Site Down. Script 
-Command > type: [./g-scrap] To acess Site Scrapper. 
+\nCommand > type: [restart] To restart garun-Framework.
+\nCommand > type: [./site.gframe] To access, Is Site Down. Script 
+\nCommand > type: [./g-scrap] To acess Site Scrapper. 
 \nCommand > type: [g.handle-paywork] To handle a payload session if sent payload to victim.
-\nCommand > type: [clr] To clear the Screen.\nCommand > type: [ebomb] To access Email-Bomber.""", "magenta")
+\nCommand > type: [scrapnum] To know a brief info about a phone number.
+\nCommand > type: [clr] To clear the Screen.\n\nCommand > type: [ebomb] To access Email-Bomber.
+\nCommand > type:[exit] To exit framework""", "magenta")
 
-for _commands_ in info_text_for_usage:
-	sys.stdout.write(_commands_)
-	sys.stdout.flush()
-	time.sleep(0.01)
+
 
 
 def choose_option():
 	__commands__ = input("\n\n\n\n>>> ").lower()
-	if "start-gframe" in __commands__:
+	
+		
+	if "help" in __commands__:
+			for _commands_ in info_text_for_usage:
+				sys.stdout.write(_commands_)
+				sys.stdout.flush()
+				time.sleep(0.01)
+				
+	elif "exit" in __commands__:
+		sys.exit()
+		
+	elif "start-gframe" in __commands__:
 		print(colored("\nGarun-Framework Already Started Just type listed Commands Above To use them : ","yellow"))
 	elif "./site.gframe" in __commands__:
 		get_url = input("\nEnter a URL to check : ")
@@ -60,7 +76,7 @@ def choose_option():
 	elif "clr" in __commands__:
 		os.system('clear')
 	elif "restart" in __commands__:
-		print("\n\nRestarting Garun-Framework.....")
+		print(colored("\n\nRestarting Garun-Framework..... ", "green"))
 		os.system('exit()')
 		os.system('python3 Garun-Framework.py')
 	elif "./g-scrap" in __commands__:
@@ -129,6 +145,67 @@ def choose_option():
 				os.system('clear')
 			mail_bomber()
 		mail_bomber()
+		
+	elif "scrapnum" in __commands__:
+		phone_num = input("\nEnter phone number with (+(code)) : ")
+		gnumber = phonenumbers.parse(phone_num, "CH")
+		time.sleep(0.1)
+		print("\nCountry Is : ", geocoder.description_for_number(gnumber, "en"))
+		ch_num = phonenumbers.parse(phone_num, "RO")
+		time.sleep(0.1)
+
+		print("\nISP Is : ", carrier.name_for_number(gnumber, "en"))
+	
+		num_timezone = phonenumbers.parse(phone_num)
+		time.sleep(0.1)
+	
+		print("\nTime Zone : ", timezone.time_zones_for_number(gnumber))
+	
+		ask = input("\nDo you Want to Extract a number from given Source ? (Y/N) : ")
+		if ask == "Y" or ask == "y":
+			text = input("\nEnter the full text from where you want to exract phonenumber : ")
+		code = input("\nEnter country in Short for country number you are searching for eg.(IN) : ")
+		
+		try:
+			numbers = phonenumbers.PhoneNumberMatcher(text, code) 
+			for hnumber in numbers:
+				print("\n", "Number is : ", hnumber)
+				time.sleep(0.1)
+				
+		except Exception as e:
+			time.sleep(0.1)
+			print(colored("\nUnable to fetch Info !", "red"))
+		else:
+			pass
+		phone_number = phonenumbers.parse(phone_num)
+		valid = phonenumbers.is_valid_number(phone_number) 
+		possible = phonenumbers.is_possible_number(phone_number)
+		time.sleep(0.1)
+		print( "\nChecking Wether Number is Valid or not ! : ") 
+		is_valid = valid
+		if is_valid == True:
+			time.sleep(0.1)
+			print(colored("\nPhone Number Is Valid !", "green"))
+		elif is_valid == False:
+			time.sleep(0.1)
+			print("\nPhone Number is not a Valid Number !")
+		else:
+			time.sleep(0.1)
+			print("\nUnable to fetch info !")
+		time.sleep(0.1)
+			
+		print(colored("\nChecking wether Number is possible or not ! : ", "yellow"))
+		is_possible = possible
+
+		if is_possible == True:
+			time.sleep(0.1)
+			print(colored("\nNumber is Possible...", "green"))
+		elif is_possible == False:
+			time.sleep(0.1)
+			print(colored("\nNumber dosent seems to be a possible number !", "red"))
+		else:
+			time.sleep(0.1)
+			print(colored("\nUnable to fetch info !", "red"))
 	
 	else:
 		print(colored("\n\nInvaild Command Type correct Command.\n", "red"))
