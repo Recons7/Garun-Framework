@@ -12,7 +12,7 @@
 
 "Web Scrapping Script."
 
-"Phone number Informatics gathering Script"
+"Phone number Information gathering Script"
 
 "Is Site Down Script To Check wether Site is Down or Not ?"
 
