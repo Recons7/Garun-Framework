@@ -12,6 +12,8 @@
 
 "Web Scrapping Script."
 
+"Phone number Informatics gathering Script"
+
 "Is Site Down Script To Check wether Site is Down or Not ?"
 
 "An Email Bomber"
@@ -47,6 +49,8 @@
 "Commands are listed On the Tool itself But I am including Commands For the Tool here too :- 
 
 Command > type: [restart] To restart garun-Framework.
+
+Command > type: [scrapnum] To gather information about a Phone number
 
 Command > type: [./site.gframe] To access, Is Site Down. Script 
 
