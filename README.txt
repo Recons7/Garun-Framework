@@ -1,13 +1,12 @@
-
 "Welcome To Garun-Framework"
 
-# ========[Garun-Framework]==========#
+# ========[Garun-Framework]=======#
 
 # Creator : Anonymous
 # email-me: goncertking@gmail.com
 # github : https://github.com/Recons7
 
-# ========[Garun-Framework]==========#
+# ========[Garun-Framework]=======#
 
 "This Framework Consist of Some Usefull Hacking Scripts. It contains following scripts :- "
 
@@ -19,27 +18,25 @@
 
 "A payload for windows, linux.."
 
-"A phone number Osint Tool"
-
 "And more...."
 
 ">>> We Will always Try to make it more Good And Usefull."
 
-#=================================#
+#===============================#
 # Note:- 
 #
 # "This Tool is Only Developed For legall 
-# Uses. Any illegal Use of this tool Will 
-# Not be Tolerated. 
-# Be legall and Use it !"
+# Uses. Any illegal Use of this tool Will be # Not Tolerated. And We will not be 
+# Responsible For Any illegal Activities 
+# Done By you.... Be legall and Use it !"
 #
-#======={Garun-Framework}=========#
+#========{Garun-Framework}=======#
 
 ========= Installation :- =============
 
-"git clone https://github.com/Recons7/Garun-Framework.git"
+"First copy the url for Garun-Framework's Repository"
 
-"👆👆👆 Clone it. And then Change directory :- cd Garun-Framework"
+"And then clone it to your linux machines, windows or termux. With git clone command."
 
 "Then Install requirements For This Framework. To install requirements Type: pip install -r requirements.txt "
 
@@ -49,8 +46,6 @@
 
 "Commands are listed On the Tool itself But I am including Commands For the Tool here too :- 
 
-Command > type: [help] To see for Usable Commands.
-
 Command > type: [restart] To restart garun-Framework.
 
 Command > type: [./site.gframe] To access, Is Site Down. Script 
@@ -58,8 +53,6 @@ Command > type: [./site.gframe] To access, Is Site Down. Script
 Command > type: [./g-scrap] To acess Site Scrapper. 
 
 Command > type: [g.handle-paywork] To handle a payload session if sent payload to victim.
-
-Command > type: [scrapnum] To Osint a phone number.
 
 Command > type: [clr] To clear the Screen.
 

