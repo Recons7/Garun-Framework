@@ -61,5 +61,8 @@ Command > type: [clr] To clear the Screen.
 
 Command > type: [ebomb] To access Email-Bomber."
 
+# How To Update ?
+
+To Update This Tool First Go to "Garun_Framework" Directory And then Type "git pull" And press Enter. And You are Done ! Enjoy :)
 ======** Thanks for reading **=======
 
