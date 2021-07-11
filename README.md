@@ -28,12 +28,12 @@
 
 #===============================#
 # Note:- 
-# Only For legall Uses Only !!!
+Only For legal Uses Only !!!
 #
 #
 #========{Garun-Framework}=======#
 
-========= Installation :- =============
+# Installation :-
 
 "First copy the url for Garun-Framework's Repository"
 
@@ -43,7 +43,7 @@
 
 "And Now requirements are installed You can run the tool By typing :- python3 Garun-Framework.py"
 
-========= How to use Tool :- =========
+# How to use Tool :-
 
 "Commands are listed On the Tool itself But I am including Commands For the Tool here too :- 
 
@@ -64,5 +64,7 @@ Command > type: [ebomb] To access Email-Bomber."
 # How To Update ?
 
 To Update This Tool First Go to "Garun_Framework" Directory And then Type "git pull" And press Enter. And You are Done ! Enjoy :)
+
+
 ======** Thanks for reading **=======
 
