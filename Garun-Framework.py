@@ -58,7 +58,7 @@ Type: [restart] To restart garun-Framework.
 
 \nType: [ebomb] To access Email-Bomber.
 
-\nType:[exit] To exit framework }""", "blue")
+\nType:[exit] To exit framework""", "blue")
 
 
 
