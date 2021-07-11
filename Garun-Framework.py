@@ -44,21 +44,21 @@ info_text_for_usage = colored("""\n\nWelcome To Garun-Framework. To use this too
 
 \nCommands !!!
 
-{ Type: [restart] To restart garun-Framework. }
+Type: [restart] To restart garun-Framework.
 
- \n{Type: [./site.gframe] To access, Is Site Down Script}
+ \nType: [./site.gframe] To access, Is Site Down Script
 
-\n{ Type: [./g-scrap] To acess Site Scrapper.}
+\nType: [./g-scrap] To acess Site Scrapper.
 
-\n{ Type: [g.handle-paywork] To handle a payload session if sent payload to victim.}
+\nType: [g.handle-paywork] To handle a payload session if sent payload to victim.
 
-\n{ Type: [scrapnum] To know a brief info about a phone number.}
+\nType: [scrapnum] To know a brief info about a phone number.
 
-\n{ Type: [clr] To clear the Screen. }
+\nType: [clr] To clear the Screen.
 
-\n{ Type: [ebomb] To access Email-Bomber. }
+\nType: [ebomb] To access Email-Bomber.
 
-\n{ Type:[exit] To exit framework }""", "blue")
+\nType:[exit] To exit framework }""", "blue")
 
 
 
