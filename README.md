@@ -8,7 +8,7 @@
 # email-me: goncertking@gmail.com
 # github : https://github.com/Recons7
 
-#======[Garun-Framework]=======#
+#===[Garun-Framework]===#
 
 "This Framework Consist of Some Usefull Hacking Scripts. It contains following scripts :- "
 
@@ -26,12 +26,10 @@
 
 ">>> We Will always Try to make it more Good And Usefull."
 
-#===============================#
+
 # Note:- 
 Only For legal Uses Only !!!
-#
-#
-#========{Garun-Framework}=======#
+
 
 # Installation :-
 
@@ -66,5 +64,7 @@ Command > type: [ebomb] To access Email-Bomber."
 To Update This Tool First Go to "Garun_Framework" Directory And then Type "git pull" And press Enter. And You are Done ! Enjoy :)
 
 
-======** Thanks for reading **=======
+             
+
+            ** Thanks for reading **
 
